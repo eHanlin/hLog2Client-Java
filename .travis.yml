@@ -2,7 +2,7 @@ language: java
 jdk:
   - oraclejdk8
 before_deploy:
-  - export JAR_FILE=$(ls */target/*.jar)
+  - export JAR_FILE=$(ls ./*/target/*.jar)
 deploy:
   skip_cleanup: true
   api_key: "${GITHUB_KEY}"
