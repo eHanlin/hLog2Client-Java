@@ -4,9 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jdk.version>1.8</jdk.version>
+        <hlog2.version>1.0.1</hlog2.version>
+    </properties>
+
     <groupId>hLog2</groupId>
     <artifactId>hLog2Client</artifactId>
-    <version>1.0.0</version>
+    <version>${hlog2.version}</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -16,11 +22,6 @@
         <module>socket-launcher</module>
         <module>json-translator</module>
     </modules>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jdk.version>1.8</jdk.version>
-    </properties>
 
     <dependencies>
         <dependency>
