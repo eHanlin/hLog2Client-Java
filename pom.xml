@@ -7,7 +7,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jdk.version>1.8</jdk.version>
-        <hlog2.version>1.0.3</hlog2.version>
+        <hlog2.version>1.0.4</hlog2.version>
     </properties>
 
     <groupId>hLog2</groupId>
