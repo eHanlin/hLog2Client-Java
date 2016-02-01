@@ -6,7 +6,7 @@
 
     <groupId>hLog2</groupId>
     <artifactId>hLog2Client</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -87,8 +87,8 @@
 
     <distributionManagement>
         <repository>
-            <id>mavenServer</id>
-            <url>scp://10.13.103.115:/var/www/html</url>
+            <id>bintray</id>
+            <url>https://api.bintray.com/maven/hotdog929/maven/hLog2Client/;publish=1</url>
         </repository>
     </distributionManagement>
 

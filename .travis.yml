@@ -1,3 +1,14 @@
 language: java
 jdk:
   - oraclejdk8
+before_deploy:
+  - export JAR_FILE=$(ls */target/*.jar)
+deploy:
+  skip_cleanup: true
+  api_key: "${GITHUB_KEY}"
+  provider: releases
+  file: "${JAR_FILE}"
+  on:
+    tags: true
+after_deploy:
+  - "mvn --settings .travis_mvn_settings.xml deploy"
