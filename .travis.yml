@@ -8,6 +8,7 @@ deploy:
   api_key: "${GITHUB_KEY}"
   provider: releases
   file: "${JAR_FILE}"
+  file_glob: true
   on:
     tags: true
 after_deploy:
